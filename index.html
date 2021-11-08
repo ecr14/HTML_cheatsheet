@@ -3,9 +3,96 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Julius+Sans+One&family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<title>Emma's HTML Cheatsheet</title>
 </head>
 <body>
+	<header>
+		<h1>Emma's HTML Cheatsheet</h1>
+	</header>
 
+	<main>
+		<h2>Common HTML tags</h2>
+		<table>
+		  <tr>
+		    <th>Tag name</th>
+		    <th>End tag</th> 
+		    <th>Description</th>
+		  </tr>
+		  <tr>
+		  	<td>!DOCTYPE</td>
+		  	<td>N</td>
+		  	<td>Defines the type of document i.e. HTML</td>
+		  </tr>	
+		  <tr>
+		    <td>html</td>
+		    <td>Y</td> 
+		    <td>Necessary tag for all HTML content in a HTML file</td>
+		  </tr>
+		  <tr>
+		  	<td>head</td>
+		  	<td>Y</td>
+		  	<td>Holds the metadata of the file i.e. the title of the webpage, links to external fonts etc.</td>
+		  </tr>
+		  <tr>
+		    <td>title</td>
+		    <td>Y</td> 
+		    <td>The title of the webpage, often shown on the top of tab or browser</td>
+		  </tr>
+		  <tr>
+		  	<td>link</td>
+		  	<td>N</td>
+		  	<td>Gives a relationship between the document and an external source i.e. linking a font to the file</td>
+		  </tr>
+		  <tr>
+		  	<td>body</td>
+		  	<td>Y</td>
+		  	<td>Defines the documents body i.e. the content to display is placed here</td>
+		  </tr>
+		  <tr>
+		  	<td>p</td>
+		  	<td>Y</td>
+		  	<td>Defines a paragraph</td>
+		  </tr>
+		  <tr>
+		  	<td>h1..h6</td>
+		  	<td>Y</td>
+		  	<td>Defines a heading with decreasing size i.e. h1 is the largest, h6 the smallest</td>
+		  </tr>
+		</table>
+
+		<h2>Images, Audio & Video</h2>
+		<figure>
+			<img src="./images/kitten.png">
+			<figcaption>Cute kitty image example</figcaption>
+		</figure>
+
+		<h3>Tag elements</h3>
+		<table>
+		  <tr>
+		    <th>Tag name</th>
+		    <th>End tag</th> 
+		    <th>Description</th>
+		  </tr>
+		  <tr>
+		  	<td>img</td>
+		  	<td>N</td>
+		  	<td>Defines an image, use src='' to specify</td>
+		  </tr>	
+		  <tr>
+		  	<td>audio</td>
+		  	<td>Y</td>
+		  	<td>Defines sound content, needs src. Use controls attribute for pause, play buttons etc.</td>
+		  </tr>
+		  <tr>
+		  	<td>video</td>
+		  	<td>Y</td>
+		  	<td>Defines a video or movie, needs src</td>
+		  </tr>
+		</table>
+
+		<p>With audio and video tags, alternative source providing can be used with the &lt;source&gt; tag. This goes in between the original tags</p>
+	</main>
 </body>
 </html>
